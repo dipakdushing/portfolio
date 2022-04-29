@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Dipak Dushing | Full-Stack Web Developer</title>
+  <link rel="icon" href="./assets\jpeg\aj1.jpg">
+  <meta name="description" content="Portfolio Template for Developer" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("iCh8Yb3QV6qkdYllz");
+    })();
+  </script>
+  <script>
+    function sendMail(params) {
+      var tempParams = {
+        form_name: document.getElementById("name").value,
+        to_name: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+
+      };
+      emailjs.send("service_ss8mqoh", "template_qq2x4bq", tempParams)
+        .then(function (res) {
+          console.log("success", res.status);
+        })
+    }
+  </script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets\jpeg\dd.jpg" alt="DD Logo Image" class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub"></span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About</a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#skill" class="header__link">Skills</a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projects
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#contact" class="header__link"> Contact </a>
+          </li>
+
+
+          <li class="header__link-wrapper">
+            <a href="https://drive.google.com/file/d/1YSfRd5kV4oPc-XFAgGeSeFtwPKQRPL_O/view?usp=sharing" target="_blank"
+              rel="noreferrer" class="header__link"> Resume </a>
+          </li>
+
+
+
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets\png\res-modified.png" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets\png\res-modified.png" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hey, It's Dipak Dushing </h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
+          CRAZY & GOAL-ORIENTED FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK.
+        </p>
+      </div>
+      <div class="home-hero__cta">
+        <a href="./#projects" class="btn btn--bg">Projects</a>
+      </div>
+    </div>
+    <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="https://www.linkedin.com/in/dipak-dushing?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRFudu2C6Txuza92gAZClzg%3D%3D"
+          target="_blank" rel="noreferrer" class="home-hero__social-icon-link">
+          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://github.com/dipakdushing" target="_blank" rel="noreferrer" class="home-hero__social-icon-link">
+          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+
+
+      <!-- <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link" style="color:white;">
+            <img
+              src="./assets/png/free-mail-icon-142-thumb.png"
+              alt="icon"
+
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div> -->
+      <div class="home-hero__social">
+        <a href="mailto:dushingdipak14@gmail.com?subject=message"
+          class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+          <img src="./assets\png\gmail2.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+    </div>
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+
+        </span>
+      </h2>
+      <div class="about__content">
+
+        <div class="about__content-skills">
+          <h3 class="about__content-title"></h3>
+          <div class="skills">
+
+            <div id="my-img">
+              <img id="my-img" src="./assets\png\res-modified.png" alt="">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="about__content-main">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              Hey! It's
+              <strong>Dipak Dushing</strong>
+              and I'm a <strong> Full Stack Web Developer </strong> located in <strong>Nashik,Maharashtra.</strong> I am
+              Goal-Oriented
+              passionate Full Stack Web Developer having an experience of building Web applications with HTML / CSS
+              JavaScript /
+              Reactjs / Nodejs / Express / MongoDB and some other cool libraries and frameworks.
+              .
+
+            </p>
+
+            <p class="about__content-details-para">
+              Feel free to <strong> contact </strong>me here.
+            </p>
+          </div>
+          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+
+  <section id="skill" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">Skills</span>
+        <span class="heading-sec__sub">
+
+        </span>
+      </h2>
+      <!-- <div class="about__content"> -->
+      <!-- <div class="about__content-main"> -->
+
+
+      <h3 class="about__content-title"></h3>
+      <div class="skills1">
+        <div class="skills__skill">
+          <h4>JavaScript</h4>
+          <img src="./assets\png\javascript.png" alt="">
+        </div>
+        <div class="skills__skill">
+          <h4>CSS</h4>
+          <img src="./assets\png\css3.png" alt="">
+        </div>
+
+        <div class="skills__skill">
+          <h4>HTML</h4>
+          <img src="./assets\png\html.png" alt="">
+        </div>
+
+        <div class="skills__skill">
+          <h4>React</h4>
+          <img src="./assets\png\react1.png" alt="">
+        </div>
+        <div class="skills__skill">
+          <h4>MongoDb</h4>
+          <img src="./assets\png\mongo2.png" alt="">
+        </div>
+        <div class="skills__skill">
+          <h4>Redux</h4>
+          <img src="./assets\png\redux1.png" alt="">
+        </div>
+
+        <div class="skills__skill">
+          <h4>Nodejs</h4>
+          <img src="./assets\png\nodejs.png" alt="">
+        </div>
+        <div class="skills__skill">
+          <h4>Git</h4>
+          <img src="./assets/png/git.png" alt="">
+        </div>
+        <div class="skills__skill">
+          <h4>Bootstrap</h4>
+          <img src="./assets\png\boot.png">
+        </div>
+        <div class="skills__skill">
+          <h4>C-Programming</h4>
+          <img src="./assets/png/cp.png" style="width: 150px" height="130px" alt="">
+        </div>
+        <div class="skills__skill">
+          <h4>C++</h4>
+          <img src="./assets/png/c++.png" style="width: 150px" alt="">
+        </div>
+        <div class="skills__skill">
+          <h4>Postman</h4>
+          <img src="https://img.icons8.com/wired/100/000000/postman-api.png" />
+
+        </div>
+        <div class="skills__skill">
+          <h4>aws</h4>
+          <img src="./assets\png\aws.png" style="width: 150px" height="180px" border-radius="50%">
+        </div>
+        <div class="skills__skill">
+          <h4>Netlify</h4>
+          <img src="./assets/png/n.png" style="width: 150px" height="180px" alt="">
+        </div>
+        <div class="skills__skill">
+          <h4>Vercel</h4>
+          <img src="./assets/png/v.png" style="width: 150px" height="200px" alt="">
+        </div>
+
+
+        <!-- </div>
+        </div> -->
+
+
+
+      </div>
+  </section>
+
+
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__sub">
+
+        </span>
+      </h2>
+
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets\jpeg\zee5.png" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">|| Zee5 Website Clone ||</h3>
+            <p class="projects__row-content-desc">
+              Zee5 is an Indian subscription video on-demand and over-the-top streaming service, run by Zee
+              Entertainment Enterprises. It brings best unlimited online shows movies and many kind of videos in
+              different languages. Also Watch premieres of your favourite blockbuster movies, music and TV show episodes
+              a day before telecast on ZEE5.
+            </p>
+            <div class="img-logo">
+              <div>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/html-5.png" />
+                <h3>HTML</h3>
+              </div>
+              <div>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/css3.png" />
+                <h3>CSS</h3>
+              </div>
+
+              <div>
+                <img src="https://img.icons8.com/ios-filled/30/000000/javascript-logo.png" />
+                <h3>JavaScript</h3>
+              </div>
+
+            </div>
+
+
+            <div class="project-details__links">
+              <!-- <h3 class="project-details__content-title">See Live</h3> -->
+              <a href="https://zee5-clone.netlify.app/" class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank">Live Site</a>
+              <a href="https://github.com/dipakdushing/zee5_clone.git"
+                class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Code </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="./assets\png\ebay.png" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title"> || Ebay Website Clone ||</h3>
+            <p class="projects__row-content-desc">
+              Ebay.com is an E-Commerce website facilitates consumer-to-consumer and business-to-consumer sales through
+              its website.
+            </p>
+            <div class="img-logo">
+              <div>
+
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/css3.png" />
+                <h3>CSS</h3>
+              </div>
+              <div>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/html-5.png" />
+                <h3>HTML</h3>
+              </div>
+
+              <div>
+
+                <img class="js" src="https://img.icons8.com/ios-filled/30/000000/javascript-logo.png" />
+                <h3>JavaScript</h3>
+
+              </div>
+              <div class="js">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ayXLqqJg-SmITAHr5Wj9VRR2YtcO4JFJ5g&usqp=CAU"
+                  width="30px" height="30px" />
+                <h3>NodejS</h3>
+              </div>
+              <div class="js">
+                <img
+                  src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Lgyno4NC7rhy49BAEjN%2F-Lh14lb3LH4C886qWxYA%2F-Lh1DZeIUQennGd9RiHe%2FScreen%20Shot%202019-06-10%20at%2011.30.20%20AM.png?alt=media&token=784b79f6-81b5-4308-97a2-155afb9d496f"
+                  width="30px" height="30px" />
+                <h3>ExpressJS</h3>
+              </div>
+              <div class="js">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-74Ves_8ZSdFSMGnIVx7wGezcrOPQantP7BzCa31UZ0OJ1hnPLyW3Br3hKDkIIouNYw&usqp=CAU"
+                  width="30px" height="30px" />
+                <h3>MongoDB</h3>
+              </div>
+            </div>
+
+
+            <div class="project-details__links">
+              <!-- <h3 class="project-details__content-title">See Live</h3> -->
+              <a href="https://ebay-clone-web15.netlify.app/" class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank">Live Site</a>
+              <a href="https://github.com/deekshant57/ebay-cloning1.git"
+                class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Code</a>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="projects__row">
+          <!-- <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div> -->
+          <!-- <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 3</h3>
+              <p class="projects__row-content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                facilis tempora, explicabo quae quod deserunt eius sapiente
+                praesentium.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="" class="contact__form" onsubmit="{sendMail()}">
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Name</label>
+            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
+              id="name" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Email</label>
+            <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email"
+              id="email" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Message</label>
+            <textarea required cols="15" rows="5" class="contact__form-input" placeholder="Enter Your Message"
+              name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dipak-dushing/">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/dipakdushing">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+
+            <a target="_blank" rel="noreferrer" href="mailto:dushingdipak14@gmail.com">
+              <img class="main-footer__icon" src="./assets\png\gmail2.png" alt="icon" />
+            </a>
+
+
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Dipak Dushing</h4>
+          <p class="main-footer__short-desc">
+            "Strive to build things that make a difference!".
+          </p>
+        </div>
+      </div>
+
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; @2022 Inspired by
+        <a rel="noreferrer" target="_blank" href="">Dstar</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
